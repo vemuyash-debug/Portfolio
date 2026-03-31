@@ -3,15 +3,17 @@ import { skills } from '@/data/skills'
 import type { Skill } from '@/types'
 
 const categories: Record<Skill['category'], string> = {
-  programming: 'Programming & Web Technologies',
-  frontend: 'Frontend Development',
-  backend: 'Backend & APIs',
-  frameworks: 'Frameworks & Tools',
-  databases: 'Databases & Systems',
-  cloud: 'Cloud Technologies',
+  languages: 'Languages',
+  frameworks: 'Frameworks',
+  cloud: 'Cloud',
+  devops: 'DevOps',
+  databases: 'Databases',
+  architecture: 'Architecture',
+  ai: 'AI & Agents',
+  practices: 'Practices',
 }
 
-const categoryOrder: Skill['category'][] = ['programming', 'frontend', 'backend', 'frameworks', 'databases', 'cloud']
+const categoryOrder: Skill['category'][] = ['languages', 'frameworks', 'cloud', 'devops', 'databases', 'architecture', 'ai', 'practices']
 
 export function Skills() {
   const skillsByCategory = categoryOrder.map((category) => ({

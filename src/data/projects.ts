@@ -10,9 +10,9 @@ export const projects: Project[] = [
   },
   {
     id: '1',
-    title: 'Visual Question Answering using Deep Learning',
-    description: 'Developed a Visual Question Answering system using CNNs, LSTMs, and attention mechanisms on the VQA dataset. Integrated image and text features to predict answers with visual interpretability through heatmaps.',
-    tags: ['Python', 'PyTorch', 'CNN', 'LSTM', 'Attention'],
+    title: 'Visual Question Answering System',
+    description: 'Developed a multimodal deep learning system combining CNN (vision) and LSTM (NLP) to answer image-based questions. Applied ML optimization techniques to improve prediction accuracy.',
+    tags: ['Python', 'TensorFlow', 'CNN', 'LSTM', 'NLP'],
   },
   {
     id: '2',
@@ -22,9 +22,9 @@ export const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'AthletaAI - E-commerce Platform',
-    description: 'Created a complete e-commerce platform using React.js for the frontend and Node.js/Express with MySQL for the backend, including secure login and product search.',
-    tags: ['React', 'Node.js', 'Express', 'MySQL'],
+    title: 'AthletaAI – Distributed E-commerce Platform',
+    description: 'Designed a distributed e-commerce platform using Java Spring Boot microservices and React for product browsing, auth, and order processing — built for horizontal scalability and fault isolation. Implemented event-driven order workflows with AWS SQS for async order/payment/inventory communication; RESTful APIs backed by DynamoDB and containerized with Docker; achieved 99.9% availability under load.',
+    tags: ['Java', 'Spring Boot', 'React', 'AWS SQS', 'DynamoDB', 'Docker'],
     liveUrl: 'https://athletaai.netlify.app/login',
     liveUrlLabel: 'Live Website',
   },

@@ -20,16 +20,16 @@ export function About() {
           className="max-w-3xl"
         >
           <p className="text-slate-400 leading-relaxed mb-4">
-            I'm Yashaswi Vemu, a Computer Science graduate student at the University of Texas at Arlington
-            (expected May 2026) with professional experience as an Software Engineer at ServiceNow.
-            I worked on enterprise platform features including the Upgrade Console, UI development using React
-            and ServiceNow UI Builder, REST API integrations, and automated testing within Agile teams.
+            Software Engineer with 2+ years building scalable distributed systems using Java, Spring Boot,
+            and AWS. I built AI-powered automation at ServiceNow across 500+ enterprise deployments and
+            event-driven fintech platforms at Paves, focused on customer impact, operational excellence,
+            and systems that scale.
+          </p>
+          <p className="text-slate-400 leading-relaxed mb-4">
+            <strong className="text-slate-300">Software Engineer, Paves Technologies</strong> (Dallas, TX | Sep 2025 – Present) — I design and maintain REST APIs and distributed backend services using Java, Python, and GCP for payment processing and transaction workflows. I apply ML models for transaction monitoring and fraud prediction, build ranking workflows for flagged transactions, and integrate Generative AI and NLP (Vertex AI) to extract key fields from compliance documents. I also build internal React UI components for fraud review and develop GCP service integrations for payment workflows and compliance.
           </p>
           <p className="text-slate-400 leading-relaxed">
-            I'm interested in building scalable full-stack applications and applying AI and machine learning
-            to practical use cases. My academic and project experience spans artificial intelligence, machine
-            learning, cloud computing, and data-driven systems, with a focus on developing reliable end-to-end
-            solutions that combine strong frontend design with robust backend architecture.
+            <strong className="text-slate-300">Software Engineer, ServiceNow</strong> (Hyderabad, India | Jul 2022 – Jul 2024) — I contributed to the Merge Agent, an AI agent that automates metadata conflict resolution during platform upgrades. I built a custom Fluent SDK plugin, scan-check skills, and 3-way merge skills for the Merge Agent, integrated it with an MCP server and build tools, and worked on Advanced Search for Application Manager using React and JavaScript (improving component discovery by ~25%). I also designed Upgrade Console components and backend integrations with JavaScript and REST APIs, developed UI components with ServiceNow UI Builder and React, and authored skills in ServiceNow AI Agent Studio.
           </p>
         </motion.div>
       </div>

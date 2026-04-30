@@ -20,16 +20,16 @@ export function About() {
           className="max-w-3xl"
         >
           <p className="text-slate-400 leading-relaxed mb-4">
-            Software Engineer with 2+ years building scalable distributed systems using Java, Spring Boot,
-            and AWS. I built AI-powered automation at ServiceNow across 500+ enterprise deployments and
-            event-driven fintech platforms at Paves, focused on customer impact, operational excellence,
-            and systems that scale.
+            AI Developer with experience building generative AI and LLM-powered automation solutions for
+            requirement analysis, workflow automation, and test case generation. I focus on Python, API
+            integration, and AI-driven system integration, with hands-on experience prototyping and
+            deploying scalable automation tools in enterprise environments.
           </p>
           <p className="text-slate-400 leading-relaxed mb-4">
-            <strong className="text-slate-300">Software Engineer, Paves Technologies</strong> (Dallas, TX | Sep 2025 – Present) — I design and maintain REST APIs and distributed backend services using Java, Python, and GCP for payment processing and transaction workflows. I apply ML models for transaction monitoring and fraud prediction, build ranking workflows for flagged transactions, and integrate Generative AI and NLP (Vertex AI) to extract key fields from compliance documents. I also build internal React UI components for fraud review and develop GCP service integrations for payment workflows and compliance.
+            <strong className="text-slate-300">AI/ML Engineer, Paves Technologies</strong> (Dallas, TX | Sep 2025 – Present) — I design and deploy ML-based transaction ranking and fraud scoring models using Python, build feature pipelines and evaluation workflows (cross-validation, precision/recall, ROC-AUC), and expose real-time prediction services through Java/Python REST APIs. I also support NLP-based document classification workflows and scalable backend services on GCP for high-volume transaction processing.
           </p>
           <p className="text-slate-400 leading-relaxed">
-            <strong className="text-slate-300">Software Engineer, ServiceNow</strong> (Hyderabad, India | Jul 2022 – Jul 2024) — I contributed to the Merge Agent, an AI agent that automates metadata conflict resolution during platform upgrades. I built a custom Fluent SDK plugin, scan-check skills, and 3-way merge skills for the Merge Agent, integrated it with an MCP server and build tools, and worked on Advanced Search for Application Manager using React and JavaScript (improving component discovery by ~25%). I also designed Upgrade Console components and backend integrations with JavaScript and REST APIs, developed UI components with ServiceNow UI Builder and React, and authored skills in ServiceNow AI Agent Studio.
+            <strong className="text-slate-300">AI/ML Engineer, ServiceNow</strong> (Hyderabad, India | Jul 2022 – Jul 2024) — I designed and maintained scalable backend services for enterprise workflow automation using Java and Python, built distributed service components supporting 500+ global upgrade deployments, developed REST APIs and modular backend libraries, and contributed to automated validation workflows integrated in CI/CD pipelines for regression and reliability standards.
           </p>
         </motion.div>
       </div>

@@ -46,4 +46,10 @@ export const projects: Project[] = [
     description: 'Worked on the design and development of the ServiceNow Upgrade Console. Built UI Builder components, developed Advanced Search UI with ReactJS, and integrated REST APIs.',
     tags: ['React', 'JavaScript', 'REST API', 'ServiceNow'],
   },
+  {
+    id: '7',
+    title: 'Large Language Model Training & Optimization',
+    description: 'Experimented with supervised fine-tuning workflows to improve task-specific LLM performance. Built structured training datasets and preprocessing pipelines for alignment, and designed evaluation metrics to benchmark output quality across iterations.',
+    tags: ['LLMs', 'SFT', 'Prompt Engineering', 'Embeddings', 'Model Evaluation'],
+  },
 ]

@@ -2,6 +2,16 @@ import type { Project } from '@/types'
 
 export const projects: Project[] = [
   {
+    id: 'fraud-scoring',
+    title: 'Fraud Risk Scoring API',
+    description:
+      'Designed an ML fraud-scoring service with feature pipelines, versioned models, and REST inference via FastAPI. Built an analyst review dashboard with SHAP-based “why flagged” explanations for suspicious transactions, evaluated with ROC-AUC/PR-AUC, and added population drift checks for production-style monitoring.',
+    tags: ['Python', 'FastAPI', 'scikit-learn', 'SHAP', 'Docker', 'ML'],
+    githubUrl: 'https://github.com/vemuyash-debug/fraud-risk-scoring',
+    liveUrl: 'https://fraud-risk-scoring.onrender.com',
+    liveUrlLabel: 'Live Demo',
+  },
+  {
     id: 'mavpath',
     title: 'MavPath – Smart Campus Navigation System',
     description: 'Web-based campus navigation application developed as part of Master\'s coursework at UTA. Helps users discover campus buildings and routes through an interactive map interface, improving navigation and accessibility across the university campus.',

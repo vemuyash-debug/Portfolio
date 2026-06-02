@@ -11,6 +11,18 @@ export interface Project {
 
 export interface Skill {
   name: string
-  category: 'languages' | 'frameworks' | 'cloud' | 'devops' | 'databases' | 'architecture' | 'ai' | 'practices'
+  category:
+    | 'languages'
+    | 'frameworks'
+    | 'automation'
+    | 'databases'
+    | 'cloud'
+    | 'ml'
+    | 'ai'
+    | 'dataengineering'
+    | 'mlops'
+    | 'devops'
+    | 'practices'
+    | 'llms'
   level?: number
 }

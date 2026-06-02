@@ -21,7 +21,8 @@ export const projects: Project[] = [
   {
     id: '1',
     title: 'Visual Question Answering System',
-    description: 'Developed a multimodal deep learning system combining CNN (vision) and LSTM (NLP) to answer image-based questions. Applied ML optimization techniques to improve prediction accuracy.',
+    description:
+      'UTA | Spring 2025 — Developed multimodal deep learning models combining CNN and LSTM architectures for image-based question answering. Performed training, hyperparameter tuning, and validation with structured evaluation pipelines.',
     tags: ['Python', 'TensorFlow', 'CNN', 'LSTM', 'NLP'],
   },
   {
@@ -49,12 +50,6 @@ export const projects: Project[] = [
     title: 'Comparative Analysis of ML Models for Multiple Disease Prediction',
     description: 'Developed a machine learning model using multiple sensors data (TH 11, Spo2, pulse, MQ2) to predict diseases like cardiovascular conditions and diabetes, focusing on early diagnosis and preventive healthcare.',
     tags: ['Python', 'Machine Learning', 'Data Analytics'],
-  },
-  {
-    id: '6',
-    title: 'ServiceNow Upgrade Console',
-    description: 'Worked on the design and development of the ServiceNow Upgrade Console. Built UI Builder components, developed Advanced Search UI with ReactJS, and integrated REST APIs.',
-    tags: ['React', 'JavaScript', 'REST API', 'ServiceNow'],
   },
   {
     id: '7',

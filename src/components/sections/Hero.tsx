@@ -86,7 +86,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-slate-400 mb-6"
             >
-              AI Engineer | ML & GenAI Applications | APIs, RAG, Production ML Systems
+              AI/ML Engineer | ML & GenAI | RAG, LLMs, Production ML Systems | Java, Python, GCP
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

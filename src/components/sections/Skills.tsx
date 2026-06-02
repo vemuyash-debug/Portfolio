@@ -5,22 +5,41 @@ import type { Skill } from '@/types'
 const categories: Record<Skill['category'], string> = {
   languages: 'Languages',
   frameworks: 'Frameworks',
-  cloud: 'Cloud',
-  devops: 'DevOps',
+  automation: 'Automation & Tools',
   databases: 'Databases',
-  architecture: 'Architecture',
+  cloud: 'Cloud',
+  ml: 'Machine Learning',
   ai: 'AI & Agents',
-  practices: 'Practices',
+  dataengineering: 'Data Engineering',
+  mlops: 'MLOps',
+  devops: 'DevOps',
+  practices: 'Software Engineering Practices',
+  llms: 'LLMs',
 }
 
-const categoryOrder: Skill['category'][] = ['languages', 'frameworks', 'cloud', 'devops', 'databases', 'architecture', 'ai', 'practices']
+const categoryOrder: Skill['category'][] = [
+  'languages',
+  'frameworks',
+  'automation',
+  'databases',
+  'cloud',
+  'ml',
+  'ai',
+  'dataengineering',
+  'mlops',
+  'devops',
+  'practices',
+  'llms',
+]
 
 export function Skills() {
-  const skillsByCategory = categoryOrder.map((category) => ({
-    category,
-    label: categories[category],
-    skills: skills.filter((s) => s.category === category),
-  })).filter((group) => group.skills.length > 0)
+  const skillsByCategory = categoryOrder
+    .map((category) => ({
+      category,
+      label: categories[category],
+      skills: skills.filter((s) => s.category === category),
+    }))
+    .filter((group) => group.skills.length > 0)
 
   return (
     <section id="skills" className="py-24 px-6">
@@ -31,7 +50,7 @@ export function Skills() {
           viewport={{ once: true }}
           className="font-display text-3xl sm:text-4xl font-bold text-white mb-4"
         >
-          Skills
+          Technical Skills
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -40,7 +59,8 @@ export function Skills() {
           transition={{ delay: 0.05 }}
           className="text-slate-400 mb-12 max-w-2xl"
         >
-          Technologies and tools I work with to build production-grade systems.
+          Technologies and domains aligned with my resume — from production ML and GenAI to full-stack
+          engineering and cloud deployment.
         </motion.p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -50,7 +70,7 @@ export function Skills() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.05 }}
               className="bg-surface-800 border border-surface-700 rounded-xl p-6"
             >
               <h3 className="font-display font-semibold text-primary-400 mb-4">{group.label}</h3>

@@ -6,6 +6,7 @@ export const skills: Skill[] = [
   { name: 'TypeScript', category: 'languages' },
   { name: 'JavaScript', category: 'languages' },
   { name: 'SQL', category: 'languages' },
+  { name: 'Shell Scripting', category: 'languages' },
 
   { name: 'React.js', category: 'frameworks' },
   { name: 'Spring Boot', category: 'frameworks' },
@@ -19,9 +20,16 @@ export const skills: Skill[] = [
   { name: 'REST APIs', category: 'automation' },
   { name: 'Test Automation Frameworks', category: 'automation' },
 
+  { name: 'SQL Server', category: 'databases' },
+  { name: 'PostgreSQL', category: 'databases' },
+  { name: 'MySQL', category: 'databases' },
   { name: 'Vector Databases (FAISS, ChromaDB)', category: 'databases' },
   { name: 'Graph Databases', category: 'databases' },
 
+  { name: 'Azure Data Factory', category: 'cloud' },
+  { name: 'ADLS Gen2', category: 'cloud' },
+  { name: 'Blob Storage', category: 'cloud' },
+  { name: 'Synapse Analytics', category: 'cloud' },
   { name: 'GCP (Vertex AI, Pub/Sub, BigQuery)', category: 'cloud' },
   { name: 'AWS (SQS, DynamoDB, EC2, S3, Lambda)', category: 'cloud' },
 
@@ -42,10 +50,39 @@ export const skills: Skill[] = [
   { name: 'Fraud Detection', category: 'ai' },
   { name: 'MLOps', category: 'ai' },
 
+  { name: 'Azure Databricks', category: 'dataengineering' },
+  { name: 'ETL/ELT Pipelines', category: 'dataengineering' },
+  { name: 'Data Modeling', category: 'dataengineering' },
+  { name: 'Data Warehousing', category: 'dataengineering' },
+  { name: 'Data Governance', category: 'dataengineering' },
+  { name: 'Data Quality', category: 'dataengineering' },
   { name: 'Data Pipelines', category: 'dataengineering' },
   { name: 'IoT Data Processing', category: 'dataengineering' },
   { name: 'Structured & Semi-Structured Data', category: 'dataengineering' },
   { name: 'ETL Workflows', category: 'dataengineering' },
+
+  { name: 'Apache Spark', category: 'bigdata' },
+  { name: 'PySpark', category: 'bigdata' },
+  { name: 'Spark SQL', category: 'bigdata' },
+  { name: 'Structured Streaming', category: 'bigdata' },
+  { name: 'Delta Lake', category: 'bigdata' },
+  { name: 'Kafka', category: 'bigdata' },
+
+  { name: 'Joins', category: 'sql' },
+  { name: 'CTEs', category: 'sql' },
+  { name: 'Window Functions', category: 'sql' },
+  { name: 'Aggregations', category: 'sql' },
+  { name: 'Stored Procedures', category: 'sql' },
+  { name: 'Data Modelling', category: 'sql' },
+
+  { name: 'Workflows', category: 'databricks' },
+  { name: 'Databricks SQL', category: 'databricks' },
+  { name: 'Unity Catalog', category: 'databricks' },
+  { name: 'Notebooks', category: 'databricks' },
+  { name: 'Delta Live Tables', category: 'databricks' },
+
+  { name: 'Power BI', category: 'reporting' },
+  { name: 'Tableau', category: 'reporting' },
 
   { name: 'Model Monitoring', category: 'mlops' },
   { name: 'Model Retraining', category: 'mlops' },
@@ -55,6 +92,9 @@ export const skills: Skill[] = [
   { name: 'Cloud ML Deployment (AWS)', category: 'mlops' },
   { name: 'Explainable AI', category: 'mlops' },
 
+  { name: 'Git', category: 'devops' },
+  { name: 'GitHub', category: 'devops' },
+  { name: 'Azure DevOps', category: 'devops' },
   { name: 'GitHub-based workflows', category: 'devops' },
   { name: 'CI/CD automation', category: 'devops' },
   { name: 'Containerized ML services (Docker)', category: 'devops' },

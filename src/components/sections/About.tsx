@@ -1,9 +1,17 @@
 import { motion } from 'framer-motion'
 
 const EXCELLENCE = [
-  'Built AI-powered enterprise solutions combining LLMs, semantic search, and workflow automation.',
-  'Developed intelligent multi-agent systems for information retrieval and complex decision-making.',
-  'Delivered scalable RAG and conversational AI platforms using Python, LangChain, OpenAI APIs, and FastAPI.',
+  'Built ETL and analytics pipelines with Azure Databricks, PySpark, and Delta Lake for large-scale data processing.',
+  'Developed full-stack community platforms with Spring Boot, React, and MySQL, including REST APIs and role-based access.',
+  'Designed near real-time streaming pipelines with Kafka and Spark Structured Streaming for engagement analytics.',
+]
+
+const ADEPTREE_BULLETS = [
+  'Built a community management platform (RUHOME) supporting security, service requests, and marketplace activities using Java, Spring Boot, and React.',
+  'Developed RESTful APIs and backend services with Spring Boot and JPA, implementing CRUD operations and role-based access control.',
+  'Created reusable UI components for web and mobile with ReactJS, Redux, and Material UI.',
+  'Processed and analyzed resident and visitor activity data for operational reporting using Azure Databricks, PySpark, and Delta Lake.',
+  'Handled deployment, API testing, and performance optimization with Nginx, Postman, and Git in an Agile environment.',
 ]
 
 export function About() {
@@ -26,40 +34,31 @@ export function About() {
           className="max-w-3xl"
         >
           <p className="text-slate-400 leading-relaxed mb-8">
-            AI Developer with experience building generative AI and LLM-powered automation solutions for
-            requirement analysis, workflow automation, and test case generation. Proficient in Python, API
-            integration, and AI-driven system integration, with experience developing prototypes and deploying
-            scalable automation tools in enterprise environments.
+            Computer Science graduate student at The University of Texas at Arlington with a strong interest in
+            Data Engineering and Cloud Technologies. Experienced in Python, SQL, PySpark, Azure Databricks, and
+            Delta Lake, with hands-on work building ETL pipelines, processing large datasets, and performing data
+            analysis for reporting and analytics.
           </p>
 
           <h3 className="font-display text-lg font-semibold text-white mb-4">Professional Experience</h3>
 
-          <div className="mb-6 pb-6 border-b border-surface-700">
-            <p className="text-slate-300 font-medium mb-1">AI/ML Engineer, Paves Technologies</p>
-            <p className="text-slate-500 text-sm mb-2">Dallas, TX | April 2025 – Present</p>
-            <p className="text-slate-500 text-sm mb-3">
-              Python, PyTorch, LangChain, FAISS, OpenAI API, FastAPI, Docker
-            </p>
-            <p className="text-slate-400 leading-relaxed text-sm">
-              Design and deploy ML-based transaction ranking and fraud scoring models; build feature pipelines
-              and evaluation workflows (cross-validation, precision/recall, ROC-AUC); expose real-time prediction
-              services through Java/Python REST APIs; support NLP document classification and scalable backend
-              services on GCP for high-volume transaction processing.
-            </p>
-          </div>
-
           <div className="mb-8 pb-8 border-b border-surface-700">
-            <p className="text-slate-300 font-medium mb-1">Full Stack Developer, Adeptree Technologies</p>
+            <p className="text-slate-300 font-medium mb-1">Software Engineer, Adeptree Technologies Pvt. Ltd.</p>
             <p className="text-slate-500 text-sm mb-2">Hyderabad, India | Feb 2023 – Jul 2024</p>
+            <p className="text-slate-400 text-sm mb-2">
+              Project: RUHOME – Community Management & Data Analytics Platform
+            </p>
             <p className="text-slate-500 text-sm mb-3">
-              Java, Spring Boot, Spring Data JPA, ReactJS, React Native, Redux, Material UI, REST APIs, WebSocket,
-              MySQL, Nginx, Axios, HTML5, CSS3, JavaScript (ES6), Git, Postman, VS Code
+              Java, Spring Boot, ReactJS, React Native, MySQL, REST APIs, Azure Databricks, PySpark, Delta Lake
             </p>
-            <p className="text-slate-400 leading-relaxed text-sm">
-              Built full-stack web and mobile applications; developed REST and WebSocket APIs with Spring Boot;
-              shipped responsive UIs with React and React Native; deployed services behind Nginx with MySQL-backed
-              data layers in Agile teams.
-            </p>
+            <ul className="space-y-2">
+              {ADEPTREE_BULLETS.map((item) => (
+                <li key={item} className="text-slate-400 leading-relaxed text-sm flex gap-2">
+                  <span className="text-primary-400 mt-1.5 shrink-0">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <h3 className="font-display text-lg font-semibold text-white mb-4">Evidence of Excellence</h3>

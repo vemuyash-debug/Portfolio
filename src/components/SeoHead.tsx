@@ -1,8 +1,8 @@
 import { Helmet } from 'react-helmet-async'
 
-const DEFAULT_TITLE = 'Yashaswi Vemu | Portfolio | Software Engineer & MS Computer Science'
+const DEFAULT_TITLE = 'Yashaswi Vemu | Portfolio | Data Engineer & MS Computer Science'
 const DEFAULT_DESCRIPTION =
-  'Yashaswi Vemu - AI/ML Engineer at Paves Technologies and former Full Stack Developer at Adeptree Technologies. MS Computer Science at UT Arlington. ML, GenAI, RAG, Java, Python, GCP, AWS.'
+  'Yashaswi Vemu - Data Engineering focused CS graduate student at UT Arlington. Azure Databricks, PySpark, Delta Lake, ETL pipelines, and cloud analytics. Former Software Engineer at Adeptree Technologies.'
 const DEFAULT_IMAGE = '/profile.png'
 const SITE_URL = 'https://your-portfolio.vercel.app' // Update with your deployment URL
 
@@ -26,7 +26,7 @@ export function SeoHead({
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content="Yashaswi Vemu, AI ML engineer, Paves Technologies, Adeptree Technologies, UT Arlington, Java, Spring Boot, GCP, AWS, machine learning, Generative AI, RAG, NLP" />
+      <meta name="keywords" content="Yashaswi Vemu, Data Engineer, Azure Databricks, PySpark, Delta Lake, ETL, Spark, UT Arlington, Adeptree Technologies, AWS, SQL" />
       <meta name="author" content="Yashaswi Vemu" />
 
       {/* Open Graph */}

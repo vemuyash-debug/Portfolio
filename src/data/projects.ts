@@ -2,6 +2,36 @@ import type { Project } from '@/types'
 
 export const projects: Project[] = [
   {
+    id: 'customer-analytics-etl',
+    title: 'Azure Databricks ETL Pipeline for Customer Analytics',
+    description:
+      'UTA 2025 — Built a near real-time customer analytics pipeline in Azure Databricks to process login, session, and user activity data. Used Apache Kafka and Spark Structured Streaming to ingest and transform events with checkpointing for reliable processing. Stored cleansed and aggregated data in Delta Lake tables, created PySpark and Spark SQL logic for active users, session trends, and engagement patterns, and applied Spark optimization techniques such as partitioning and caching with dashboards for key activity metrics.',
+    tags: [
+      'Azure Databricks',
+      'PySpark',
+      'Spark Structured Streaming',
+      'Apache Kafka',
+      'Delta Lake',
+      'ADLS Gen2',
+      'SQL',
+    ],
+    githubUrl: 'https://github.com/vemuyash-debug/customer-analytics-etl',
+  },
+  {
+    id: 'customer-activity-monitoring',
+    title: 'Customer Activity Monitoring System',
+    description:
+      'UTA 2025 — Developed Databricks notebooks using PySpark to process and monitor customer activity datasets. Implemented Structured Streaming with sample Kafka events for near real-time processing, used checkpointing and Delta Lake for reliable pipelines and historical data, performed cleaning, transformations, and aggregations with Spark DataFrames and Spark SQL, and created notebook-based visualizations to track customer engagement and processed event trends.',
+    tags: [
+      'Azure Databricks',
+      'Apache Kafka',
+      'PySpark',
+      'Spark Structured Streaming',
+      'Delta Lake',
+    ],
+    githubUrl: 'https://github.com/vemuyash-debug/customer-activity-monitoring-system',
+  },
+  {
     id: 'fraud-scoring',
     title: 'Fraud Risk Scoring API',
     description:

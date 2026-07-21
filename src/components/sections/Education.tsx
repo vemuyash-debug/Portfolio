@@ -16,14 +16,13 @@ const EDUCATION = [
 ]
 
 const COURSEWORK = [
-  'Data Structures & Algorithms',
-  'Distributed Systems',
-  'Machine Learning',
-  'Artificial Intelligence',
-  'Natural Language Processing',
-  'Database Systems',
-  'Software Engineering',
+  'Big Data Analytics',
   'Cloud Computing',
+  'Data Warehousing & Mining',
+  'Machine Learning',
+  'Database Management Systems',
+  'Distributed Systems',
+  'Data Visualization',
 ]
 
 export function Education() {

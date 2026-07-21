@@ -11,6 +11,10 @@ const categories: Record<Skill['category'], string> = {
   ml: 'Machine Learning',
   ai: 'AI & Agents',
   dataengineering: 'Data Engineering',
+  bigdata: 'Big Data',
+  sql: 'SQL Skills',
+  databricks: 'Databricks',
+  reporting: 'Reporting',
   mlops: 'MLOps',
   devops: 'DevOps',
   practices: 'Software Engineering Practices',
@@ -18,18 +22,22 @@ const categories: Record<Skill['category'], string> = {
 }
 
 const categoryOrder: Skill['category'][] = [
+  'dataengineering',
+  'bigdata',
+  'sql',
+  'databricks',
+  'cloud',
   'languages',
   'frameworks',
-  'automation',
   'databases',
-  'cloud',
+  'reporting',
+  'automation',
   'ml',
   'ai',
-  'dataengineering',
+  'llms',
   'mlops',
   'devops',
   'practices',
-  'llms',
 ]
 
 export function Skills() {
@@ -59,8 +67,8 @@ export function Skills() {
           transition={{ delay: 0.05 }}
           className="text-slate-400 mb-12 max-w-2xl"
         >
-          Technologies and domains aligned with my resume — from production ML and GenAI to full-stack
-          engineering and cloud deployment.
+          Data engineering and cloud analytics alongside full-stack, ML, and GenAI skills — from Spark and
+          Databricks to production software and AI systems.
         </motion.p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

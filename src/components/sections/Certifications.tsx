@@ -1,6 +1,26 @@
 import { motion } from 'framer-motion'
 
-const CERTIFICATIONS = [
+type Certification = {
+  title: string
+  description: string
+  badgeUrl?: string
+  focus: string[]
+}
+
+const CERTIFICATIONS: Certification[] = [
+  {
+    title: 'Databricks Certified Data Engineer Associate',
+    description:
+      'Validates skills in building and maintaining production data pipelines on Databricks using Spark, Delta Lake, and lakehouse architecture.',
+    badgeUrl: 'https://credentials.databricks.com/f61982ac-b861-4dd3-8247-06f7e4cc5212',
+    focus: [
+      'ETL/ELT pipelines on Databricks',
+      'Delta Lake and lakehouse fundamentals',
+      'Spark DataFrames and Spark SQL',
+      'Incremental processing and data quality',
+      'Production workflows and notebooks',
+    ],
+  },
   {
     title: 'AWS Certified Developer – Associate',
     description:
@@ -27,22 +47,9 @@ const CERTIFICATIONS = [
       'Applications of generative AI and prompt engineering fundamentals',
       'Responsible AI, transparency, fairness, and human oversight',
       'Security, privacy, and governance for AI solutions',
-      'Using AWS AI/ML services in solution design conversations',
     ],
   },
-  {
-    title: 'Google Cybersecurity Certificate',
-    description: 'Coursera professional certificate (Mar 2024) — security foundations, networks, Linux, SQL, and incident response.',
-    badgeUrl:
-      'https://www.credly.com/badges/152445c0-ab13-42d2-87ab-bce5590f9889/linked_in_profile',
-    focus: [
-      'Security frameworks and risk management',
-      'Network security and traffic analysis',
-      'Linux and SQL for security operations',
-      'Detection, response, and automation fundamentals',
-    ],
-  },
-] as const
+]
 
 export function Certifications() {
   return (
@@ -63,10 +70,11 @@ export function Certifications() {
           transition={{ delay: 0.05 }}
           className="text-slate-400 mb-10 max-w-2xl"
         >
-          AWS cloud development and AI credentials plus cybersecurity foundations — verified on Credly.
+          Databricks data engineering credentials and AWS cloud & AI certifications — verified where badges are
+          available on Credly.
         </motion.p>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {CERTIFICATIONS.map((cert, index) => (
             <motion.article
               key={cert.title}
@@ -81,22 +89,24 @@ export function Certifications() {
                   <h3 className="font-display text-xl font-semibold text-white mb-1">{cert.title}</h3>
                   <p className="text-slate-500 text-sm">{cert.description}</p>
                 </div>
-                <a
-                  href={cert.badgeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary-500 hover:bg-primary-600 text-white text-sm font-medium rounded-lg transition-colors w-fit"
-                >
-                  {cert.badgeUrl.includes('credly.com') ? 'View badge on Credly' : 'View certificate'}
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                </a>
+                {cert.badgeUrl ? (
+                  <a
+                    href={cert.badgeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary-500 hover:bg-primary-600 text-white text-sm font-medium rounded-lg transition-colors w-fit"
+                  >
+                    {cert.badgeUrl.includes('credly.com') ? 'View badge on Credly' : 'View certificate'}
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                ) : null}
               </div>
               <div className="flex flex-wrap gap-2 mt-auto">
                 {cert.focus.map((label) => (

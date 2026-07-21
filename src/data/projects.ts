@@ -2,6 +2,23 @@ import type { Project } from '@/types'
 
 export const projects: Project[] = [
   {
+    id: 'azure-databricks-sales-lakehouse',
+    title: 'Azure Databricks Lakehouse for Sales and Revenue Analytics',
+    description:
+      'Built an end-to-end Azure Lakehouse for retail sales and revenue analytics using Medallion Architecture (Bronze → Silver → Gold). Orchestrated multi-source ingestion with Azure Data Factory, processed data in Azure Databricks with PySpark and Delta Lake (MERGE, OPTIMIZE/Z-ORDER), implemented incremental loads with watermarks, SCD Type 2 customer history, data quality validators, and Unity Catalog governance, and published Power BI–ready gold star-schema tables for revenue, product, and store KPIs.',
+    tags: [
+      'Azure Databricks',
+      'PySpark',
+      'Delta Lake',
+      'Azure Data Factory',
+      'ADLS Gen2',
+      'Unity Catalog',
+      'Power BI',
+      'SQL',
+    ],
+    githubUrl: 'https://github.com/vemuyash-debug/azure-databricks-sales-lakehouse',
+  },
+  {
     id: 'customer-analytics-etl',
     title: 'Azure Databricks ETL Pipeline for Customer Analytics',
     description:

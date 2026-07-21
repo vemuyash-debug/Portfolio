@@ -19,6 +19,23 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/vemuyash-debug/azure-databricks-sales-lakehouse',
   },
   {
+    id: 'aws-serverless-ecommerce-pipeline',
+    title: 'AWS Serverless Data Pipeline for E-Commerce Analytics',
+    description:
+      'Built an end-to-end serverless AWS data pipeline for e-commerce analytics with event-driven ingestion from S3 through Lambda and AWS Glue PySpark ETL. Implemented a data quality framework with configurable rules and quarantine handling, incremental loading with Glue bookmarks and watermarks, star-schema dimensional modeling with SCD Type 2 customer history, and multi-engine analytics via Athena and Redshift, with infrastructure provisioned through Terraform and CI/CD via GitHub Actions.',
+    tags: [
+      'AWS Glue',
+      'AWS Lambda',
+      'Amazon S3',
+      'Amazon Athena',
+      'Amazon Redshift',
+      'PySpark',
+      'Terraform',
+      'SQL',
+    ],
+    githubUrl: 'https://github.com/vemuyash-debug/aws-serverless-ecommerce-data-pipeline',
+  },
+  {
     id: 'customer-analytics-etl',
     title: 'Azure Databricks ETL Pipeline for Customer Analytics',
     description:
